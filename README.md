@@ -28,7 +28,7 @@ uvicorn backend.app:app --reload --port 9009
 
 - Change to `frontend/`, run `npm install` and `npm start` (this is a minimal scaffold).
 
-What's next
+<!-- What's next
 - Implement client-side flow/congestion control logic in the React app or provide a Python client demonstrating the algorithms.
-- Harden file transfer, add MongoDB persistence for messages and files, and add authentication.
+- Harden file transfer, add MongoDB persistence for messages and files, and add authentication. -->
 

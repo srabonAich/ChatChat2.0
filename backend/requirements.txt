@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+motor
+pydantic
+python-multipart
+aiofiles
+websockets

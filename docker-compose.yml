@@ -1,0 +1,15 @@
+services:
+  mongo:
+    image: mongo:6.0
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      # host:container -> map host 27018 to container 27017 to avoid conflict with a system mongod
+      - "27018:27017"
+    environment:
+      # For dev convenience we run without auth by default. For production set up users and enable authentication.
+      MONGO_INITDB_DATABASE: chatchat
+
+volumes:
+  mongo-data:
